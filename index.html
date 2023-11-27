@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html class="h-full" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,9 +19,49 @@
     <!-- Styles  -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <h1 class="text-3xl text-blue-600 hover:text-black">
-      Ready for deployment...
-    </h1>
+  <body class="bg-electric-indigo font-grotesk h-full">
+    <!-- Start game modal  -->
+    <section class="bg-royal-blue h-full w-full transition-opacity">
+      <div class="flex h-full items-center justify-center">
+        <h2 class="visually-hidden">Start game</h2>
+        <div
+          class="bg-electric-indigo shadow-box flex w-full max-w-[480px] flex-col rounded-[40px] border-[3px] border-black px-10 pb-[60px] pt-[70px]"
+        >
+          <img
+            class="mx-auto mb-[79px] h-[52px] w-[52px] object-contain"
+            src="img/badge.svg"
+            alt="Badge"
+            width="52"
+            height="52"
+          />
+          <!-- Play VS Player   -->
+          <button
+            class="shadow-box bg-goldenrod hover:shadow-royal-blue hover:border-royal-blue mb-[30px] rounded-[20px] border-[3px] border-black px-5 py-[13px] text-[24px] font-bold uppercase transition-colors"
+          >
+            <span class="flex items-center justify-between">
+              <span>Play vs Player</span>
+              <img src="img/player-vs-player.svg" alt="" />
+            </span>
+          </button>
+
+          <!-- Play VS CPU   -->
+          <button
+            class="shadow-box bg-spicy-pink hover:shadow-royal-blue hover:border-royal-blue mb-[30px] rounded-[20px] border-[3px] border-black px-5 py-[13px] text-[24px] font-bold uppercase transition-colors"
+          >
+            <span class="flex items-center justify-between">
+              <span>Play vs Cpu</span>
+              <img src="img/player-vs-cpu.svg" alt="" />
+            </span>
+          </button>
+
+          <!-- Game rules  -->
+          <button
+            class="shadow-box hover:shadow-royal-blue hover:border-royal-blue rounded-[20px] border-[3px] border-black bg-white p-5 text-left text-[24px] font-bold uppercase transition-colors"
+          >
+            Game rules
+          </button>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
