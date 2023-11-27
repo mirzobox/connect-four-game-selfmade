@@ -13,7 +13,11 @@ module.exports = {
     fontFamily: {
       grotesk: ["Space Grotesk", "Arial", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        box: "0px 10px 0px 0px #000",
+      },
+    },
   },
   plugins: [require("daisyui")],
 };
