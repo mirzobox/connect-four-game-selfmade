@@ -57,11 +57,81 @@
           <!-- Game rules  -->
           <button
             class="shadow-box hover:shadow-royal-blue hover:border-royal-blue rounded-[20px] border-[3px] border-black bg-white p-5 text-left text-[24px] font-bold uppercase transition-colors"
+            id="showGameRuleButton"
           >
             Game rules
           </button>
         </div>
       </div>
     </section>
+
+    <!-- Game rule modal  -->
+    <!-- Open the modal using ID.showModal() method -->
+    <dialog id="gameRuleModal" class="bg-royal-blue modal select-none">
+      <div class="relative">
+        <div
+          class="shadow-box modal-box relative flex w-full max-w-[480px] flex-col border-[3px] border-black py-[34px] pb-[54px] pt-[30px]"
+        >
+          <h2 class="mb-[29px] text-center text-[56px] font-bold uppercase">
+            Rules
+          </h2>
+          <div class="mb-8">
+            <h3
+              class="text-electric-indigo mb-4 text-[20px] font-bold uppercase"
+            >
+              Objective
+            </h3>
+            <p class="text-[16px] text-black opacity-60">
+              Be the first player to connect 4 of the same colored discs in a
+              row (either vertically, horizontally, or diagonally).
+            </p>
+          </div>
+          <div>
+            <h3
+              class="text-electric-indigo mb-4 text-[20px] font-bold uppercase"
+            >
+              How to Play
+            </h3>
+
+            <!-- Rules  -->
+            <ol class="rules flex flex-col gap-3">
+              <li class="rule flex items-start">
+                <p class="text-[16px] text-black opacity-60">
+                  Red goes first in the first game.
+                </p>
+              </li>
+              <li class="rule flex items-start">
+                <p class="text-[16px] text-black opacity-60">
+                  Players must alternate turns, and only one disc can be dropped
+                  in each turn.
+                </p>
+              </li>
+              <li class="rule flex items-start">
+                <p class="text-[16px] text-black opacity-60">
+                  The game ends when there is a 4-in-a-row or a stalemate.
+                </p>
+              </li>
+              <li class="rule flex items-start">
+                <p class="text-[16px] text-black opacity-60">
+                  The starter of the previous game goes second on the next game.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <form method="dialog">
+          <button
+            class="bg-spicy-pink shadow-box hover:border-royal-blue hover:shadow-royal-blue absolute bottom-0 left-2/4 h-16 w-16 -translate-x-2/4 translate-y-2/4 rounded-full border-[3px] border-black transition-colors"
+          >
+            <span class="flex items-center justify-center">
+              <img src="img/check.svg" alt="" aria-hidden="true" />
+            </span>
+          </button>
+        </form>
+      </div>
+    </dialog>
+
+    <!-- JS  -->
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>

@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  *:focus {
+    outline: none;
+  }
+
   @font-face {
     font-family: "Space Grotesk";
     src:
@@ -30,5 +34,19 @@
     width: 1px;
     height: 1px;
     overflow: hidden;
+  }
+
+  .rules {
+    counter-reset: rules;
+  }
+
+  .rule {
+    counter-increment: rules;
+  }
+
+  .rule::before {
+    margin-right: 18px;
+    font-weight: 700;
+    content: counter(rules);
   }
 }
