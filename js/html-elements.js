@@ -1,4 +1,5 @@
-const elShowGameRuleButton = document.getElementById("showGameRuleButton"),
+const elLoader = document.getElementById("loader"),
+  elShowGameRuleButton = document.getElementById("showGameRuleButton"),
   elGameRuleModal = document.getElementById("gameRuleModal");
 
-export { elShowGameRuleButton, elGameRuleModal };
+export { elLoader, elShowGameRuleButton, elGameRuleModal };
