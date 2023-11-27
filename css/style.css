@@ -696,6 +696,34 @@ html {
   --bc: 0.746477 0.0216 264.435964;
 }
 
+@font-face {
+  font-family: "Space Grotesk";
+
+  src:
+      url("../fonts/SpaceGrotesk-Medium.woff2") format("woff2"),
+      url("../fonts/SpaceGrotesk-Medium.woff") format("woff");
+
+  font-weight: 500;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+
+  src:
+      url("../fonts/SpaceGrotesk-Bold.woff2") format("woff2"),
+      url("../fonts/SpaceGrotesk-Bold.woff") format("woff");
+
+  font-weight: bold;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -9640,6 +9668,10 @@ details.collapse summary::-webkit-details-marker {
 
 .align-super {
   vertical-align: super;
+}
+
+.font-grotesk {
+  font-family: Space Grotesk, Arial, sans-serif;
 }
 
 .text-3xl {
