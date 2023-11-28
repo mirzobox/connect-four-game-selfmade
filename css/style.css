@@ -8541,6 +8541,10 @@ details.collapse summary::-webkit-details-marker {
   inset: -0.25rem;
 }
 
+.inset-0 {
+  inset: 0px;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -8563,6 +8567,10 @@ details.collapse summary::-webkit-details-marker {
 
 .isolation-auto {
   isolation: auto;
+}
+
+.z-\[888\] {
+  z-index: 888;
 }
 
 .float-right {
@@ -8779,6 +8787,14 @@ details.collapse summary::-webkit-details-marker {
 
 .max-w-\[300px\] {
   max-width: 300px;
+}
+
+.max-w-0 {
+  max-width: 0rem;
+}
+
+.max-w-\[662px\] {
+  max-width: 662px;
 }
 
 .flex-shrink {
@@ -9920,6 +9936,21 @@ details.collapse summary::-webkit-details-marker {
   padding-bottom: 34px;
 }
 
+.px-\[15px\] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.py-\[52px\] {
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+
+.py-\[10px\] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .pb-\[54px\] {
   padding-bottom: 54px;
 }
@@ -10096,6 +10127,11 @@ details.collapse summary::-webkit-details-marker {
 .text-electric-indigo {
   --tw-text-opacity: 1;
   color: rgb(121 69 255 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -10540,6 +10576,11 @@ details.collapse summary::-webkit-details-marker {
 .hover\:border-royal-blue:hover {
   --tw-border-opacity: 1;
   border-color: rgb(92 45 213 / var(--tw-border-opacity));
+}
+
+.hover\:bg-spicy-pink:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 102 135 / var(--tw-bg-opacity));
 }
 
 .hover\:font-bold:hover {
