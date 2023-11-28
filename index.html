@@ -19,18 +19,18 @@
     <!-- Styles  -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="bg-electric-indigo font-grotesk h-full">
+  <body class="h-full bg-electric-indigo font-grotesk">
     <!-- Loader  -->
     <div class="loader-wrapper" id="loader">
       <span class="loader"></span>
     </div>
 
     <!-- Start game modal  -->
-    <section class="bg-royal-blue h-full w-full transition-opacity">
+    <section class="h-full w-full bg-royal-blue transition-opacity">
       <div class="flex h-full items-center justify-center">
         <h2 class="visually-hidden">Start game</h2>
         <div
-          class="bg-electric-indigo shadow-box flex w-full max-w-[480px] flex-col rounded-[40px] border-[3px] border-black px-10 pb-[60px] pt-[70px]"
+          class="flex w-full max-w-[480px] flex-col rounded-[40px] border-[3px] border-black bg-electric-indigo px-10 pb-[60px] pt-[70px] shadow-box"
         >
           <img
             class="mx-auto mb-[79px] h-[52px] w-[52px] object-contain"
@@ -41,7 +41,7 @@
           />
           <!-- Play VS Player   -->
           <button
-            class="shadow-box bg-goldenrod hover:shadow-royal-blue hover:border-royal-blue mb-[30px] rounded-[20px] border-[3px] border-black px-5 py-[13px] text-[24px] font-bold uppercase transition-colors"
+            class="mb-[30px] rounded-[20px] border-[3px] border-black bg-goldenrod px-5 py-[13px] text-[24px] font-bold uppercase shadow-box transition-colors hover:border-royal-blue hover:shadow-royal-blue"
           >
             <span class="flex items-center justify-between">
               <span>Play vs Player</span>
@@ -51,7 +51,7 @@
 
           <!-- Play VS CPU   -->
           <button
-            class="shadow-box bg-spicy-pink hover:shadow-royal-blue hover:border-royal-blue mb-[30px] rounded-[20px] border-[3px] border-black px-5 py-[13px] text-[24px] font-bold uppercase transition-colors"
+            class="mb-[30px] rounded-[20px] border-[3px] border-black bg-spicy-pink px-5 py-[13px] text-[24px] font-bold uppercase shadow-box transition-colors hover:border-royal-blue hover:shadow-royal-blue"
           >
             <span class="flex items-center justify-between">
               <span>Play vs Cpu</span>
@@ -61,7 +61,7 @@
 
           <!-- Game rules  -->
           <button
-            class="shadow-box hover:shadow-royal-blue hover:border-royal-blue rounded-[20px] border-[3px] border-black bg-white p-5 text-left text-[24px] font-bold uppercase transition-colors"
+            class="rounded-[20px] border-[3px] border-black bg-white p-5 text-left text-[24px] font-bold uppercase shadow-box transition-colors hover:border-royal-blue hover:shadow-royal-blue"
             id="showGameRuleButton"
           >
             Game rules
@@ -71,18 +71,18 @@
     </section>
 
     <!-- Game rule modal  -->
-    <!-- Open the modal using ID.showModal() method -->
-    <dialog id="gameRuleModal" class="bg-royal-blue modal select-none">
+
+    <dialog id="gameRuleModal" class="modal select-none bg-electric-indigo">
       <div class="relative">
         <div
-          class="shadow-box modal-box relative flex w-full max-w-[480px] flex-col border-[3px] border-black py-[34px] pb-[54px] pt-[30px]"
+          class="modal-box relative flex w-full max-w-[480px] flex-col border-[3px] border-black py-[34px] pb-[54px] pt-[30px] shadow-box"
         >
           <h2 class="mb-[29px] text-center text-[56px] font-bold uppercase">
             Rules
           </h2>
           <div class="mb-8">
             <h3
-              class="text-electric-indigo mb-4 text-[20px] font-bold uppercase"
+              class="mb-4 text-[20px] font-bold uppercase text-electric-indigo"
             >
               Objective
             </h3>
@@ -93,7 +93,7 @@
           </div>
           <div>
             <h3
-              class="text-electric-indigo mb-4 text-[20px] font-bold uppercase"
+              class="mb-4 text-[20px] font-bold uppercase text-electric-indigo"
             >
               How to Play
             </h3>
@@ -126,7 +126,7 @@
         </div>
         <form method="dialog">
           <button
-            class="bg-spicy-pink shadow-box hover:border-royal-blue hover:shadow-royal-blue absolute bottom-0 left-2/4 h-16 w-16 -translate-x-2/4 translate-y-2/4 rounded-full border-[3px] border-black transition-colors"
+            class="absolute bottom-0 left-2/4 h-16 w-16 -translate-x-2/4 translate-y-2/4 rounded-full border-[3px] border-black bg-spicy-pink shadow-box transition-colors hover:border-royal-blue hover:shadow-royal-blue"
           >
             <span class="flex items-center justify-center">
               <img src="img/check.svg" alt="" aria-hidden="true" />

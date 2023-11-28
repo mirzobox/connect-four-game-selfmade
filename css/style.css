@@ -8757,6 +8757,10 @@ details.collapse summary::-webkit-details-marker {
   width: 4rem;
 }
 
+.w-\[480px\] {
+  width: 480px;
+}
+
 .w-\[52px\] {
   width: 52px;
 }
@@ -8765,8 +8769,16 @@ details.collapse summary::-webkit-details-marker {
   width: 100%;
 }
 
+.min-w-\[480px\] {
+  min-width: 480px;
+}
+
 .max-w-\[480px\] {
   max-width: 480px;
+}
+
+.max-w-\[300px\] {
+  max-width: 300px;
 }
 
 .flex-shrink {
