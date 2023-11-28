@@ -76,6 +76,7 @@
       </div>
     </section>
 
+    <!-- Header  -->
     <header>
       <div
         class="py mx-auto flex w-full max-w-[662px] items-center justify-between px-[15px] py-[52px]"
@@ -100,11 +101,23 @@
       </div>
     </header>
 
+    <section>
+      <div class="mx-auto w-full max-w-[662px] px-[15px]">
+        <h2 class="visually-hidden">Board</h2>
+        <div class="select-none">
+          <picture>
+            <source media="(max-width: 375px)" srcset="img/board-small.svg" />
+            <img src="img/board.svg" alt="Board" width="632" height="584" />
+          </picture>
+        </div>
+      </div>
+    </section>
+
     <!-- Game rule modal  -->
     <dialog id="gameRuleModal" class="modal select-none bg-electric-indigo">
       <div class="relative">
         <div
-          class="modal-box relative flex w-full max-w-[480px] flex-col border-[3px] border-black py-[34px] pb-[54px] pt-[30px] shadow-box"
+          class="modal-box relative flex w-full max-w-[480px] flex-col rounded-[40px] border-[3px] border-black py-[34px] pb-[54px] pt-[30px] shadow-box"
         >
           <h2 class="mb-[29px] text-center text-[56px] font-bold uppercase">
             Rules
