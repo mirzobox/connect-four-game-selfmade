@@ -104,10 +104,35 @@
     <section>
       <div class="mx-auto w-full max-w-[662px] px-[15px]">
         <h2 class="visually-hidden">Board</h2>
-        <div class="select-none">
+        <div class="relative select-none">
+          <!-- White  -->
           <picture>
-            <source media="(max-width: 375px)" srcset="img/board-small.svg" />
-            <img src="img/board.svg" alt="Board" width="632" height="584" />
+            <source
+              media="(max-width: 375px)"
+              srcset="img/board-layer-white-small.svg"
+            />
+            <img
+              class="absolute z-50"
+              src="img/board-layer-white-large.svg"
+              alt="Board"
+              width="632"
+              height="584"
+            />
+          </picture>
+
+          <!-- Black   -->
+          <picture>
+            <source
+              media="(max-width: 375px)"
+              srcset="img/board-layer-black-small.svg"
+            />
+            <img
+              class="absolute z-30"
+              src="img/board-layer-black-large.svg"
+              alt="Board"
+              width="632"
+              height="584"
+            />
           </picture>
         </div>
       </div>

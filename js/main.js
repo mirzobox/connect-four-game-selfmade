@@ -12,6 +12,7 @@ import startGameController from "./start-game-controller.js";
 // Loader
 window.onload = () => {
   loader(false);
+  startGameController(false);
 };
 
 // Show game rule [showModal() DaisyUI modal controller]
